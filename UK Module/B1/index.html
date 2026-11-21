@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Filter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Set width and height directly on the canvas tag -->
+        <canvas id="canvas" width="460" height="320"></canvas>
+
+        <div class="filters">
+            <label for="image">Image:</label>
+            <select name="image" id="image">
+                <option value="athena.jpg">image</option>
+                <option value="monalisa.jpg">mona lisa</option>
+                <option value="the-kiss.jpg">the kiss</option>
+                <option value="young-pearl.jpg">young pearl</option>
+            </select>
+
+            <label for="brightness">Filter:</label>
+            <select name="brightness" id="brightness">
+                <option value="none">filter</option>
+                <option value="brightness(50%)">darken</option>
+                <option value="brightness(150%)">brighten</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

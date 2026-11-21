@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightseagreen;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    animation: animate 2s alternate 0.5s infinite;
+}
+
+@keyframes animate {
+    from {
+        background-color: yellow;
+    }
+
+    to {
+        background-color: red;
+        border-radius: 50%;
+    }
+}
