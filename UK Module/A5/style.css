@@ -20,13 +20,17 @@ body {
     height: 400px;
     width: 400px;
     overflow: hidden;
-    background-color: #dadada;
-    transition: all 0.3s ease-in-out;
 }
 
 .img-div img {
     height: 100%;
     width: 100%;
+    /* object-fit: cover; */
     cursor: pointer;
-    mix-blend-mode: difference;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.img-div img:hover {
+    filter: grayscale(0%);
 }

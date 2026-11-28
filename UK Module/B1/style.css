@@ -16,13 +16,15 @@ body {
     justify-content: center;
 }
 
-.container {
+#canvas {
+    background-color: green;
+}
+
+#container {
     display: flex;
     flex-direction: column;
 }
 
-#canvas {
-    height: 320px;
-    height: 460px;
-    background-color: green;
+.label-div {
+    margin-top: 5px;
 }
